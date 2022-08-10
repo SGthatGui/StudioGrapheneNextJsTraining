@@ -1,6 +1,8 @@
 //section for util imports
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
+import styles from './Navigation.module.css'
 
 //section for component imports
 
@@ -13,7 +15,49 @@ const Navigation: React.FC = () => {
         <link rel='icon' href='/heart.png' />
         <title>NextJs Training</title>
       </Head>
-      <header></header>
+      <header>
+        <nav>
+          <div className='upperslice'>
+            <ul>
+              <li>
+                <Link href='/about'>About</Link>
+              </li>
+              <li>
+                <Link href='/consultation'>Consultation</Link>
+              </li>
+              <li id='logo'>
+                <Link href='/'>sooth</Link>
+              </li>
+              <li>Q</li>
+              <li>
+                <Link href='/cart'>Cart</Link>
+              </li>
+              <li>
+                <Link href='/login'>Login</Link>
+              </li>
+            </ul>
+          </div>
+          <div className='lowerslice'>
+            <ul>
+              <li>
+                <Link href='/acne'>Acne</Link>
+              </li>
+              <li>
+                <Link href='/sun'>Sun</Link>
+              </li>
+              <li>
+                <Link href='/ezcema'>Ezcema</Link>
+              </li>
+              <li>
+                <Link href='/psoriasis'>Psoriasis</Link>
+              </li>
+              <li>
+                <Link href='/vitiligio'>Vitiligio</Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </React.Fragment>
   )
 }

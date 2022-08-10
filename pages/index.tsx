@@ -3,13 +3,17 @@ import type { NextPage } from 'next'
 import { Fragment } from 'react'
 
 //section for component imports
+import Navigation from '../components/Navigation/Navigation'
 
 //section for FC
 const Landing: NextPage = () => {
   return (
     <Fragment>
+      <Navigation />
       <main>
-        <h1> This is the cleanup step of my 1st Next.js App</h1>
+        <section>
+          <h1>All Natural Skin Remedies.</h1>
+        </section>
       </main>
 
       <footer></footer>
