@@ -16,8 +16,8 @@ const Navigation: React.FC = () => {
         <title>NextJs Training</title>
       </Head>
       <header>
-        <nav>
-          <div className='upperslice'>
+        <nav id={styles.navsec}>
+          <div className={styles.upperslice}>
             <ul>
               <li>
                 <Link href='/about'>About</Link>
@@ -25,7 +25,7 @@ const Navigation: React.FC = () => {
               <li>
                 <Link href='/consultation'>Consultation</Link>
               </li>
-              <li id='logo'>
+              <li id={styles.logo}>
                 <Link href='/'>sooth</Link>
               </li>
               <li>Q</li>
@@ -37,7 +37,7 @@ const Navigation: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className='lowerslice'>
+          <div className={styles.lowerslice}>
             <ul>
               <li>
                 <Link href='/acne'>Acne</Link>
