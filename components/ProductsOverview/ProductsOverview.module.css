@@ -1,0 +1,37 @@
+.productsoverview {
+  text-align: center;
+  color: var(--text);
+}
+
+.prooverban {
+  border: 1px solid #547665;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prooverban h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.cathandler {
+  margin: 0 10vw;
+  display: flex;
+  align-items: flex-end;
+  color: var(--dark);
+  height: 10vh;
+}
+
+.cathandler a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: auto;
+}
+
+.prodcat {
+  margin: 0 10vw;
+  height: 70vh;
+  background-color: red;
+}

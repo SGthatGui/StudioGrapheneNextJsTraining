@@ -6,6 +6,7 @@ import Head from 'next/head'
 //section for component imports
 import Navigation from '../components/Navigation/Navigation'
 import Hero from '../components/Hero/Hero'
+import ProductsOverview from '../components/ProductsOverview/ProductsOverview'
 
 //section for FC
 const Landing: NextPage = () => {
@@ -19,6 +20,7 @@ const Landing: NextPage = () => {
       <Navigation />
       <main>
         <Hero />
+        <ProductsOverview />
       </main>
 
       <footer></footer>
