@@ -11,19 +11,13 @@
 .herocta h1 {
   font-size: 5rem;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .herocta p {
   font-size: 1rem;
   text-align: left;
-}
-
-.herowb {
-  color: var(--text);
-  background-color: var(--light);
-  padding: 0.3rem;
-  width: 5rem;
-  text-align: right;
+  margin-bottom: 1rem;
 }
 
 .heroimg {

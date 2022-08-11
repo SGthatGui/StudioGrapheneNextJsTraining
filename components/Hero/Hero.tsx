@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
     <React.Fragment>
       <section className={styles.hero}>
         <div className={styles.herocta}>
-          <p className={styles.wtag}>New!</p>
+          <p id='wtag'>New!</p>
           <h1>All Natural Skin Remedies.</h1>
           <p>
             A healthier you from the inside out. We’ve sourced the cleanest
