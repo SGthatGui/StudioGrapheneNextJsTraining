@@ -1,6 +1,5 @@
 //section for util imports
 import React from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
 import styles from './Navigation.module.css'
 
@@ -10,11 +9,6 @@ import styles from './Navigation.module.css'
 const Navigation: React.FC = () => {
   return (
     <React.Fragment>
-      <Head>
-        <meta name='description' content='this is my nextjs training' />
-        <link rel='icon' href='/heart.png' />
-        <title>NextJs Training</title>
-      </Head>
       <header>
         <nav id={styles.navsec}>
           <div className={styles.upperslice}>
@@ -28,7 +22,7 @@ const Navigation: React.FC = () => {
               <li id={styles.logo}>
                 <Link href='/'>sooth</Link>
               </li>
-              <li>Q</li>
+              <li id={styles.search}>Q</li>
               <li>
                 <Link href='/cart'>Cart</Link>
               </li>

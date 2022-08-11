@@ -1,6 +1,7 @@
 //section for util imports
 import type { NextPage } from 'next'
-import { Fragment } from 'react'
+import React from 'react'
+import Head from 'next/head'
 
 //section for component imports
 import Navigation from '../components/Navigation/Navigation'
@@ -8,7 +9,12 @@ import Navigation from '../components/Navigation/Navigation'
 //section for FC
 const Landing: NextPage = () => {
   return (
-    <Fragment>
+    <React.Fragment>
+      <Head>
+        <meta name='description' content='this is my nextjs training' />
+        <link rel='icon' href='/heart.png' />
+        <title>NextJs Training</title>
+      </Head>
       <Navigation />
       <main>
         <section>
@@ -17,7 +23,7 @@ const Landing: NextPage = () => {
       </main>
 
       <footer></footer>
-    </Fragment>
+    </React.Fragment>
   )
 }
 
