@@ -5,6 +5,7 @@ import Head from 'next/head'
 
 //section for component imports
 import Navigation from '../components/Navigation/Navigation'
+import Hero from '../components/Hero/Hero'
 
 //section for FC
 const Landing: NextPage = () => {
@@ -17,9 +18,7 @@ const Landing: NextPage = () => {
       </Head>
       <Navigation />
       <main>
-        <section>
-          <h1>All Natural Skin Remedies.</h1>
-        </section>
+        <Hero />
       </main>
 
       <footer></footer>
