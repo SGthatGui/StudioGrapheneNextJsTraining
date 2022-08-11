@@ -1,19 +1,29 @@
 //section for util imports
 import type { NextPage } from 'next'
-import { Fragment } from 'react'
+import React from 'react'
+import Head from 'next/head'
 
 //section for component imports
+import Navigation from '../components/Navigation/Navigation'
 
 //section for FC
 const Landing: NextPage = () => {
   return (
-    <Fragment>
+    <React.Fragment>
+      <Head>
+        <meta name='description' content='this is my nextjs training' />
+        <link rel='icon' href='/heart.png' />
+        <title>NextJs Training</title>
+      </Head>
+      <Navigation />
       <main>
-        <h1> This is the cleanup step of my 1st Next.js App</h1>
+        <section>
+          <h1>All Natural Skin Remedies.</h1>
+        </section>
       </main>
 
       <footer></footer>
-    </Fragment>
+    </React.Fragment>
   )
 }
 

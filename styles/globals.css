@@ -9,6 +9,7 @@
   --dark: #2e2e22;
   --text: #354e57;
   --primary: #eef3f4;
+  background-color: var(--primary);
   scroll-behavior: smooth;
 }
 
