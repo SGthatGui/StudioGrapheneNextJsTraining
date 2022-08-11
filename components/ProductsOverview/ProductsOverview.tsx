@@ -4,6 +4,7 @@ import styles from './ProductsOverview.module.css'
 import Link from 'next/link'
 
 //section for component imports
+import ProductCard from '../ProductCard/ProductCard'
 
 //section for FC
 const ProductsOverview: React.FC = () => {
@@ -16,10 +17,11 @@ const ProductsOverview: React.FC = () => {
         </div>
         <div className={styles.cathandler}>
           <p>Most Popular</p>
-
           <Link href='/'>Shop all products</Link>
         </div>
-        <div className={styles.prodcat}></div>
+        <div className={styles.prodcat}>
+          <ProductCard />
+        </div>
       </section>
     </React.Fragment>
   )

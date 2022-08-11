@@ -34,4 +34,5 @@
   margin: 0 10vw;
   height: 70vh;
   background-color: red;
+  display: grid;
 }

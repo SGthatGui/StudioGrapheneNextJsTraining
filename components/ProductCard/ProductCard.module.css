@@ -1,0 +1,25 @@
+.productcard {
+  background-color: pink;
+  height: 60vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.productcard button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.productcard h5 {
+  font-size: 1.5rem;
+}
+
+.productcard img {
+  height: 40vh;
+}
+
+.price {
+  padding: 1rem 0;
+}
