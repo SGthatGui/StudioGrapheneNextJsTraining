@@ -1,0 +1,25 @@
+.hero {
+  height: 70vh;
+  margin: 3rem 10vw 0 10vw;
+  color: var(--text);
+}
+
+.herocta {
+  width: 40vw;
+}
+
+.herocta h1 {
+  font-size: 5rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.herocta p {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.heroimg {
+  width: 40vw;
+}
