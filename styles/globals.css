@@ -21,3 +21,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+button {
+  color: var(--dark);
+  border: 1px solid var(--text);
+  width: 10rem;
+  height: 2rem;
+  background-color: transparent;
+}
