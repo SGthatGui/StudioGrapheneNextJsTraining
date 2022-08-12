@@ -1,6 +1,7 @@
-.productsoverview {
+.mostpopular {
   text-align: center;
   color: var(--text);
+  height: 100vh;
 }
 
 .prooverban {

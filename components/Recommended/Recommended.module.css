@@ -1,6 +1,7 @@
 .toprated {
   text-align: center;
   color: var(--text);
+  height: 80vh;
 }
 
 .cathandler {

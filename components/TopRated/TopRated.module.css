@@ -1,6 +1,7 @@
-.recommended {
+.toprated {
   text-align: center;
   color: var(--text);
+  height: 100vh;
 }
 
 .cathandler {

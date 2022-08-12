@@ -1,6 +1,6 @@
 //section for util imports
 import React from 'react'
-import styles from './ProductsOverview.module.css'
+import styles from './MostPopular.module.css'
 import Link from 'next/link'
 
 //section for component imports
@@ -10,7 +10,7 @@ import ProductCard from '../ProductCard/ProductCard'
 const ProductsOverview: React.FC = () => {
   return (
     <React.Fragment>
-      <section className={styles.productsoverview}>
+      <section className={styles.mostpopular}>
         <div className={styles.prooverban}>
           <h2>Solutions for all skin health</h2>
           <p>Explore our innovative skincare products</p>
