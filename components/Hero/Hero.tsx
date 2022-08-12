@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './Hero.module.css'
 
 //section for component imports
+import WNew from '../WNew/WNew'
 
 //section for FC
 const Hero: React.FC = () => {
@@ -10,7 +11,7 @@ const Hero: React.FC = () => {
     <React.Fragment>
       <section className={styles.hero}>
         <div className={styles.herocta}>
-          <p id='wtag'>New!</p>
+          <WNew />
           <h1>All Natural Skin Remedies.</h1>
           <p>
             A healthier you from the inside out. We’ve sourced the cleanest
