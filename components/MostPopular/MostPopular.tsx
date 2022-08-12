@@ -1,5 +1,5 @@
 //section for util imports
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './MostPopular.module.css'
 import Link from 'next/link'
 import axios from 'axios'
@@ -9,23 +9,31 @@ import ProductCard from '../ProductCard/ProductCard'
 
 //section for FC
 const ProductsOverview: React.FC = () => {
-  const [motpop, setMotpop] = React.useState()
+  const [motpop, setMotpop] = React.useState([])
 
-  const filteredproducts = (arr: any) => {
-    /* arr.filter((el: any) => el.rating.rate > 4.2) */
-    /* console.log(motpop.filter((el: any) => el.rating.rate > 4.2)) */
+  const filteredproducts = () => {
+    /* arr.filter((el: any) => el.rating.rate > 4.2)
+    console.log(motpop.filter((el: any) => el.rating.rate > 4.2))
     console.log(
       motpop
-        .sort((a, b) => a.rating.rate - b.rating.rate)
+        .sort((a, b) => b.rating.rate - a.rating.rate)
         .filter((el: any) => el.rating.rate > 4.2)
     )
+    console.log(
+      motpop.sort((a, b) => b.rating.rate - a.rating.rate).slice(0, 4)
+    ) */
+    console.log(motpop)
   }
 
   React.useEffect(() => {
     axios
       .get(`https://fakestoreapi.com/products`)
       .then((response) => {
-        setMotpop(response.data)
+        setMotpop(
+          response.data
+            .sort((a, b) => b.rating.rate - a.rating.rate)
+            .slice(0, 4)
+        )
       })
       .catch((err) => console.log(err))
   }, [])
@@ -42,7 +50,9 @@ const ProductsOverview: React.FC = () => {
           <Link href='/'>Shop all products</Link>
         </div>
         <div className={styles.prodcat}>
-          <ProductCard />
+          {motpop.map((item: any) => (
+            <ProductCard prod={item} />
+          ))}
         </div>
         <button onClick={filteredproducts}>test</button>
       </section>

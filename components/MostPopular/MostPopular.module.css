@@ -32,8 +32,8 @@
 }
 
 .prodcat {
-  margin: 0 10vw;
+  margin: 1rem 10vw;
   height: 70vh;
-  background-color: red;
-  display: grid;
+  display: flex;
+  flex-direction: row;
 }

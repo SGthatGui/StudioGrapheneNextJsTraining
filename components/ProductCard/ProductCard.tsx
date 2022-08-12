@@ -7,15 +7,15 @@ import Link from 'next/link'
 import WNew from '../WNew/WNew'
 
 //section for FC
-const ProductCard: React.FC = () => {
+const ProductCard: React.FC = (props) => {
   return (
-    <React.Fragment>
+    <React.Fragment key={props.id}>
       <div className={styles.productcard}>
         <WNew />
-        <img src='' alt='' />
-        <h5>dolor sit</h5>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <p className={styles.price}>$5.99</p>
+        <img src={props.image} alt='' />
+        <h5>{props.title} 'title'</h5>
+        <p>{props.description} 'description'</p>
+        <p className={styles.price}>{props.price} 'price'</p>
         <button>Add to cart</button>
       </div>
     </React.Fragment>
