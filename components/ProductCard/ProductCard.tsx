@@ -4,12 +4,14 @@ import styles from './ProductCard.module.css'
 import Link from 'next/link'
 
 //section for component imports
+import WNew from '../WNew/WNew'
 
 //section for FC
 const ProductCard: React.FC = () => {
   return (
     <React.Fragment>
       <div className={styles.productcard}>
+        <WNew />
         <img src='' alt='' />
         <h5>dolor sit</h5>
         <p>Lorem ipsum dolor sit amet consectetur.</p>

@@ -30,11 +30,11 @@ button {
   background-color: transparent;
 }
 
-#wtag {
+#wnew {
   color: var(--text);
-  background-color: var(--light);
+  background-color: #f7f7f7;
   padding: 0.3rem;
   width: 5rem;
   text-align: center;
-  margin: 0;
+  border: none;
 }
