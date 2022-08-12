@@ -9,13 +9,13 @@ import WNew from '../WNew/WNew'
 //section for FC
 const ProductCard: React.FC = (props) => {
   return (
-    <React.Fragment key={props.id}>
+    <React.Fragment>
       <div className={styles.productcard}>
         <WNew />
-        <img src={props.image} alt='' />
-        <h5>{props.title} 'title'</h5>
-        <p>{props.description} 'description'</p>
-        <p className={styles.price}>{props.price} 'price'</p>
+        <img src={props.prod?.image} alt='' />
+        <h5>{props.prod?.title}</h5>
+        <p>{props.prod?.description}</p>
+        <p className={styles.price}>${props.prod?.price}</p>
         <button>Add to cart</button>
       </div>
     </React.Fragment>

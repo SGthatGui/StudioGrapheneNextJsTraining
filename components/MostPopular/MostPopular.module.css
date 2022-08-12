@@ -34,6 +34,7 @@
 .prodcat {
   margin: 1rem 10vw;
   height: 70vh;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }

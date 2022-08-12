@@ -11,20 +11,6 @@ import ProductCard from '../ProductCard/ProductCard'
 const ProductsOverview: React.FC = () => {
   const [motpop, setMotpop] = React.useState([])
 
-  const filteredproducts = () => {
-    /* arr.filter((el: any) => el.rating.rate > 4.2)
-    console.log(motpop.filter((el: any) => el.rating.rate > 4.2))
-    console.log(
-      motpop
-        .sort((a, b) => b.rating.rate - a.rating.rate)
-        .filter((el: any) => el.rating.rate > 4.2)
-    )
-    console.log(
-      motpop.sort((a, b) => b.rating.rate - a.rating.rate).slice(0, 4)
-    ) */
-    console.log(motpop)
-  }
-
   React.useEffect(() => {
     axios
       .get(`https://fakestoreapi.com/products`)
@@ -51,10 +37,9 @@ const ProductsOverview: React.FC = () => {
         </div>
         <div className={styles.prodcat}>
           {motpop.map((item: any) => (
-            <ProductCard prod={item} />
+            <ProductCard prod={item} key={item.id} />
           ))}
         </div>
-        <button onClick={filteredproducts}>test</button>
       </section>
     </React.Fragment>
   )
