@@ -1,0 +1,25 @@
+.toprated {
+  text-align: center;
+  color: var(--text);
+}
+
+.cathandler {
+  margin: 0 10vw;
+  display: flex;
+  align-items: flex-end;
+  color: var(--dark);
+  height: 10vh;
+}
+
+.cathandler a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: auto;
+}
+
+.prodcat {
+  margin: 0 10vw;
+  height: 70vh;
+  background-color: red;
+  display: grid;
+}

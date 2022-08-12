@@ -6,7 +6,9 @@ import Head from 'next/head'
 //section for component imports
 import Navigation from '../components/Navigation/Navigation'
 import Hero from '../components/Hero/Hero'
-import ProductsOverview from '../components/ProductsOverview/ProductsOverview'
+import MostPopular from '../components/MostPopular/MostPopular'
+import TopRated from '../components/TopRated/TopRated'
+import Recommended from '../components/Recommended/Recommended'
 
 //section for FC
 const Landing: NextPage = () => {
@@ -20,7 +22,9 @@ const Landing: NextPage = () => {
       <Navigation />
       <main>
         <Hero />
-        <ProductsOverview />
+        <MostPopular />
+        <TopRated />
+        <Recommended />
       </main>
 
       <footer></footer>
